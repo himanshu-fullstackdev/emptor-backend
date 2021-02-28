@@ -8,6 +8,7 @@ const cors                      = require("cors");
 const logger                    = require("morgan");
 
 // Import API Routes
+const person                    = require("./routes/v1/person.js");
 
 // Import MySQL DB configuration
 const credentials               = require("./config/db_credentials.js");
@@ -45,6 +46,7 @@ app.use(bodyParser.json({limit: '10mb'}));
 app.use(bodyParser.urlencoded({limit: '10mb', extended: true }));
 
 // Start the routes
+app.use("/v1/persons", person);
 
 // Start the App
 const server = app.listen(process.env.PORT || 8080, () => {
