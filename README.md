@@ -9,11 +9,13 @@
 
 Run commands in project terminal.
 
-1. Run `npm install`.
+1. clone this repo via `git clone https://himanshu73188@bitbucket.org/himanshu73188/emptor-backend.git`
 
-2. Run `npm start`, start App with Hot reloading using node_modules/nodemon/bin/nodemon.js app.js.
+2. Run `npm install`.
 
-3. In postman, Check with http://localhost:8080/:url. Default Port:- 8080.
+3. Run `npm start`, start App with Hot reloading using node_modules/nodemon/bin/nodemon.js app.js.
+
+4. In postman, Check with http://localhost:8080/:url. Default Port:- 8080.
 
 ## Steps to assign error code to newly created API call:
 
